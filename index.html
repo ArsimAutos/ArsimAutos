@@ -3,83 +3,119 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ArsimAutos - Achats/Ventes/Reprises de véhicules d'occasions</title>
+  <title>ArsimAutos - Achats/Vente/Reprises de véhicules</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      background-color: #f5f5f5;
-      color: #333;
+      background-color: #fff;
+      color: #222;
     }
+
     header {
-      background-color: #1e1e1e;
+      background-color: #111;
       color: white;
-      padding: 20px;
+      padding: 30px 20px;
       text-align: center;
     }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+      color: #e10600;
+    }
+
     section {
-      padding: 20px;
+      padding: 40px 20px;
       max-width: 1000px;
       margin: auto;
     }
-    .gallery img {
-      width: 100%;
-      max-width: 300px;
-      margin: 10px;
-      border-radius: 8px;
+
+    h2 {
+      color: #e10600;
     }
+
     .gallery {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      gap: 20px;
     }
+
+    .gallery img {
+      width: 300px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
     .btn {
-      background-color: #007BFF;
+      background-color: #e10600;
       color: white;
-      padding: 10px 20px;
+      padding: 12px 24px;
       text-decoration: none;
       border-radius: 5px;
       display: inline-block;
-      margin-top: 10px;
+      margin-top: 20px;
     }
+
+    .contact-card {
+      background-color: #f4f4f4;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .contact-card p {
+      line-height: 1.6;
+    }
+
     footer {
-      background-color: #1e1e1e;
+      background-color: #111;
       color: white;
       text-align: center;
-      padding: 10px;
+      padding: 15px;
       margin-top: 30px;
+    }
+
+    @media screen and (max-width: 600px) {
+      .gallery {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
 <body>
   <header>
     <h1>ArsimAutos</h1>
-    <p>Vente de véhicules d’occasion – Qualité & Confiance</p>
+    <p>Vente de véhicules multimarques - Qualité, confiance & transparence</p>
   </header>
 
   <section>
-    <h2>Bienvenue chez ArsimAutos</h2>
+    <h2>Bienvenue</h2>
     <p>
-      Nous sélectionnons avec soin nos véhicules pour vous garantir fiabilité et bon prix.
-      Retrouvez toutes nos annonces sur Leboncoin.
+      Chez ArsimAutos, nous vous proposons des véhicules soigneusement sélectionnés, toutes marques confondues
     </p>
-    <a href="https://www.leboncoin.fr/boutique/338327/partenaire_vroomiz_arsimautos.htm">Voir nos annonces sur Leboncoin</a>
+    <a href="https://www.leboncoin.fr/boutique/338327/partenaire_vroomiz_arsimautos.htm>Voir nos annonces sur Leboncoin</a>
   </section>
 
   <section>
-    <h2>Quelques véhicules en stock</h2>
+    <h2>Nos véhicules</h2>
     <div class="gallery">
       <img src="https://imgur.com/dm5VKli />
-      <img src=https://imgur.com/ofbjh8h />
-      <img src=https://imgur.com/8qGcYPR/>
+      <img src="https://imgur.com/ofbjh8h" />
+      <img src="https://imgur.com/8qGcYPR" />
     </div>
   </section>
 
   <section>
     <h2>Contact</h2>
-    <p>Téléphone : <strong>0783402108</strong></p>
-    <p>Email : <strong>arsim68autos@gmail.com</strong></p>
-    <p>Adresse : <strong>Rue d'Artois 68390 SAUSHEIM</strong></p>
+    <div class="contact-card">
+      <p><strong>📞 Téléphone :</strong> <a href="tel:+33783402108">07 83 40 21 08</a></p>
+      <p><strong>✉️ Email :</strong> <a href="mailto:arsim68autos@gmail.com">arsim68autos@gmail.com</a></p>
+      <p><strong>📍 Adresse :</strong> Rue d'Artois, 68390 Sausheim</p>
+      <p><strong>🕒 Horaires :</strong> Lundi au Samedi — 08:00 à 18:00</p>
+    </div>
   </section>
 
   <footer>
